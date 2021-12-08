@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build": "yarn etsc --config=etsc.config.js"
   },
   "dependencies": {
     "koa": "^2.13.4",
@@ -16,6 +17,8 @@
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
+    "esbuild": "^0.14.2",
+    "esbuild-node-tsc": "^1.8.2",
     "eslint": "^8.4.1",
     "eslint-config-prettier": "^8.3.0",
     "nodemon": "^2.0.15",
